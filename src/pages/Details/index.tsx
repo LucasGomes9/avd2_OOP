@@ -64,10 +64,19 @@ const Details: React.FC = () => {
     return(
       <div style={{display:'flex', flexDirection:'column'}}>
       <form style={{display:'flex', flexDirection:'column'}} onSubmit={handleSubmit}>
+      <span>Professor</span>
       <input type="text" name='professor' defaultValue={data.professor} required />
+      <span>disciplina</span>
+
       <input type="text" name='disciplina' defaultValue={data.disciplina} required />
+      <span>Dia Semana:</span>
+
       <input  type="text" name='diasemana' defaultValue={data.diasemana} required />
+      <span>Periodo: </span>
+
       <input type="text" name='periodo' defaultValue={data.periodo} required />
+      <span>Horário</span>
+
       <input type="text" name='horario' defaultValue={data.horario} required />
       <input style={{ display: 'none' }} type="text"  name="id" defaultValue={data.id} />
       <button className="buttonUpdate">Atualizar</button>
